@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Responsive CSS3 Webpage</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#f4f4f4;
+}
+
+/* Header */
+header{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Navigation */
+nav{
+    background:#555;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    padding:12px 20px;
+    display:inline-block;
+    text-decoration:none;
+}
+
+nav a:hover{
+    background:#222;
+}
+
+/* Multi column section */
+.content{
+    padding:20px;
+    column-count:3;
+    column-gap:30px;
+}
+
+/* Cards */
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    width:250px;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:transform 0.4s;
+}
+
+/* Transformation */
+.card:hover{
+    transform:scale(1.1) rotate(2deg);
+}
+
+/* Icon */
+.icon{
+    font-size:40px;
+    color:#0077ff;
+}
+
+/* Animation */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.card{
+    animation:fadeIn 1s ease-in;
+}
+
+/* Responsive */
+@media (max-width:900px){
+    .content{
+        column-count:2;
+    }
+}
+
+@media (max-width:600px){
+    .content{
+        column-count:1;
+    }
+
+    nav a{
+        display:block;
+    }
+}
+
+footer{
+    text-align:center;
+    padding:15px;
+    background:#333;
+    color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>My Responsive Webpage</h1>
+<p>Using CSS3 Features</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</nav>
+
+<section class="content">
+<p>
+CSS3 allows developers to create modern responsive designs easily. 
+Features like multiple columns, animations, transformations, and custom fonts improve the visual appearance of web pages.
+</p>
+
+<p>
+Responsive design ensures that a website adapts to different screen sizes such as mobile phones, tablets, and desktops.
+Media queries are commonly used to implement responsiveness.
+</p>
+
+<p>
+Animations and transformations create interactive user experiences while maintaining performance.
+</p>
+</section>
+
+<section class="cards">
+
+<div class="card">
+<i class="fas fa-laptop icon"></i>
+<h3>Web Design</h3>
+<p>Modern responsive website design.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-code icon"></i>
+<h3>Development</h3>
+<p>Clean and efficient code.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-mobile-alt icon"></i>
+<h3>Responsive</h3>
+<p>Works on all devices.</p>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Responsive CSS3 Demo</p>
+</footer>
+
+</body>
+</html>
