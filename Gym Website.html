@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PowerFit Gym</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar-brand{
+    font-size: 1.5rem;
+}
+
+/* Hero Section */
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(236, 192, 214, 0.6),
+    rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1500&q=80');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:70px;
+    font-weight:bold;
+}
+
+.hero p{
+    font-size:24px;
+}
+
+/* Membership Cards */
+.card{
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* Programs */
+.program-box{
+    background:rgb(52, 231, 255);
+    padding:30px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.15);
+    transition:0.4s;
+}
+
+.program-box:hover{
+    transform:scale(1.05);
+}
+
+.program-box i{
+    font-size:50px;
+    color:#dc3545;
+    margin-bottom:15px;
+}
+
+/* Trainers */
+.trainer-card img{
+    height:300px;
+    object-fit:cover;
+}
+
+/* Contact Section */
+#contact{
+    background:#212529;
+}
+
+/* Footer */
+footer{
+    background:black;
+}
+
+.social-icons a{
+    color:white;
+    font-size:25px;
+    margin:10px;
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    color:#dc3545;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.hero h1{
+    font-size:45px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container">
+
+<a class="navbar-brand fw-bold" href="#">
+<i class="fas fa-dumbbell text-danger"></i> PowerFit Gym
+</a>
+
+<button class="navbar-toggler" type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#home">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#plans">Plans</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#programs">Programs</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#trainers">Trainers</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#contact">Contact</a>
+</li>
+
+</ul>
+
+</div>
+</div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+
+<div class="container text-pink">
+
+<h1>POWERFIT GYM</h1>
+
+<p>Train Hard • Stay Strong • Live Healthy</p>
+
+<a href="#plans" class="btn btn-danger btn-lg mt-3">
+Join Now
+</a>
+
+</div>
+
+</section>
+
+<!-- Membership Plans -->
+<section id="plans" class="py-5">
+
+<div class="container">
+
+<h2 class="text-center mb-5">Membership Plans</h2>
+<div class="col-md-4">
+<div class="card trainer-card shadow">
+
+<img src="c:\Users\CCLab\Desktop\External Practical\Images\81.jpeg"
+class="card-img-top"
+alt="Trainer">
+</div>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card shadow text-center h-100">
+<div class="card-body">
+
+<i class="fas fa-medal fa-3x text-warning"></i>
+
+<h3 class="mt-3">Basic Plan</h3>
+
+<h4>₹999 / Month</h4>
+
+<p>Gym Access</p>
+<p>Locker Facility</p>
+<p>Free Assessment</p>
+
+<button class="btn btn-primary">
+Choose Plan
+</button>
+
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card shadow text-center border-danger h-100">
+<div class="card-body">
+
+<i class="fas fa-crown fa-3x text-danger"></i>
+
+<h3 class="mt-3">Premium Plan</h3>
+
+<h4>₹1999 / Month</h4>
+
+<p>Gym + Cardio</p>
+<p>Diet Consultation</p>
+<p>Trainer Support</p>
+
+<button class="btn btn-danger">
+Choose Plan
+</button>
+
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card shadow text-center h-100">
+<div class="card-body">
+
+<i class="fas fa-trophy fa-3x text-success"></i>
+
+<h3 class="mt-3">Elite Plan</h3>
+
+<h4>₹2999 / Month</h4>
+
+<p>All Facilities</p>
+<p>Personal Trainer</p>
+<p>Nutrition Plan</p>
+
+<button class="btn btn-success">
+Choose Plan
+</button>
+
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- Fitness Programs -->
+<section id="programs" class="bg-light py-5">
+
+<div class="container">
+
+<h2 class="text-center mb-5">
+Fitness Programs
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+<div class="program-box">
+<i class="fas fa-dumbbell"></i>
+<h4>Weight Training</h4>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card trainer-card shadow">
+
+<img src="c:\Users\CCLab\Desktop\External Practical\Images\78.jpeg"
+class="card-img-top"
+alt="Trainer">
+</div>
+
+</div>
+
+<div class="col-md-3">
+<div class="program-box">
+<i class="fas fa-running"></i>
+<h4>Cardio</h4>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card trainer-card shadow">
+
+<img src="c:\Users\CCLab\Desktop\External Practical\Images\79.jpeg"
+class="card-img-top"
+alt="Trainer">
+</div>
+
+</div>
+
+<div class="col-md-3">
+<div class="program-box">
+<i class="fas fa-heartbeat"></i>
+<h4>Zumba</h4>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card trainer-card shadow">
+
+<img src="c:\Users\CCLab\Desktop\External Practical\Images\92.jpeg"
+class="card-img-top"
+alt="Trainer">
+</div>
+
+</div>
+<div class="col-md-3">
+<div class="program-box">
+<i class="fas fa-spa"></i>
+<h4>Yoga</h4>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card trainer-card shadow">
+
+<img src="c:\Users\CCLab\Desktop\External Practical\Images\86.jpeg"
+class="card-img-top"
+alt="Trainer">
+</div>
+
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- Trainers -->
+<section id="trainers" class="py-5">
+
+<div class="container">
+
+<h2 class="text-center mb-5">
+Our Trainers
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card trainer-card shadow">
+
+<img src="c:\Users\CCLab\Desktop\External Practical\Images\95.jpeg"
+class="card-img-top"
+alt="Trainer">
+
+<div class="card-body text-center">
+<h4>Rahul Sharma</h4>
+<p>Strength Coach</p>
+</div>
+
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card trainer-card shadow">
+
+<img src="c:\Users\CCLab\Desktop\External Practical\Images\93.jpeg"
+class="card-img-top"
+alt="Trainer">
+
+<div class="card-body text-center">
+<h4>Priya Singh</h4>
+<p>Yoga Expert</p>
+</div>
+
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card trainer-card shadow">
+
+<img src="c:\Users\CCLab\Desktop\External Practical\Images\82.jpeg"
+class="card-img-top"
+alt="Trainer">
+
+<div class="card-body text-center">
+<h4>Amit Verma</h4>
+<p>Fitness Trainer</p>
+</div>
+
+</div>
+</div>
+<div class="col-md-4">
+<div class="card trainer-card shadow">
+
+<img src="c:\Users\CCLab\Desktop\External Practical\Images\83.jpeg"
+class="card-img-top"
+alt="Trainer">
+</div>
+
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="text-white py-5">
+
+<div class="container">
+
+<h2 class="text-center mb-4">
+Online Inquiry
+</h2>
+
+<div class="row justify-content-center">
+
+<div class="col-md-6">
+
+<form class="bg-white p-4 rounded shadow">
+
+<div class="mb-3">
+<input type="text"
+class="form-control"
+placeholder="Full Name">
+</div>
+
+<div class="mb-3">
+<input type="email"
+class="form-control"
+placeholder="Email Address">
+</div>
+
+<div class="mb-3">
+<input type="tel"
+class="form-control"
+placeholder="Mobile Number">
+</div>
+
+<div class="mb-3">
+<textarea
+class="form-control"
+rows="4"
+placeholder="Your Message"></textarea>
+</div>
+
+<button class="btn btn-danger w-100">
+Submit Inquiry
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+<footer class="text-center text-white p-4">
+
+<h4>PowerFit Gym</h4>
+
+<div class="social-icons">
+
+<a href="#"><i class="fab fa-facebook"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-twitter"></i></a>
+
+<a href="#"><i class="fab fa-youtube"></i></a>
+
+</div>
+
+<p class="mt-3 mb-0">
+© 2026 PowerFit Gym. All Rights Reserved.
+</p>
+
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
